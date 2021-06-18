@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 3</title>
+<style media="screen" type="text/css">
+html, body {
+margin: 0;
+padding: 0;
+border:0;
+}
+.row{
+display: flex;
+}
+.column{
+    flex:50%;
+}
+.bandera{
+    width:400px;
+    height: 250px;
+    margin: 5%;
+    display: inline-block;
+}
+/*españa*/
+.red_spain {
+background-color: red;
+height: 60px;
+}
+.yellow{
+background-color: yellow;
+height: 80px;
+}
+/*dinamarca*/
+.red_din {
+    background-color: red;
+    height: 91px;
+    display:inline-block;
+}
+.square{
+    width:120px;
+    margin-right: 3%;
+}
+.rectangle{
+    width:330px;
+}
+.principal{
+    margin-bottom: 3%;
+}
+
+/*japon*/
+.red_jap{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto;
+    display: block;
+    margin-top: 15%;
+}
+#bandera{
+    border-color: black;
+    border-style: solid;
+    margin-top: 100px;
+}
+
+.title{
+    position: relative;
+    right:350px;
+    top: 50px;
+}
+
+/*emiratos arabes*/
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.red_emiratos{
+    background-color: red;
+    width:110px;
+    height:210px;
+}
+
+.inline{
+    display:inline-block;
+}
+
+.rectangle_emiratos{
+    width: 342px;
+    height:70px
+}
+.rect_vertical{
+    width:50px;
+    height:200px;
+}
+</style>
+</head>
+<body>
+    <section class="row">
+    <section class="bandera column">
+        <h1>España</h1>
+        <div class="red_spain"></div>
+        <div class="yellow"></div>
+        <div class="red_spain"></div>   
+    </section>
+    <section class="bandera column">
+        <h1>Dinamarca</h1>
+        <section class="principal">
+            <div class="square red_din"></div>
+            <div class="rectangle red_din"></div>
+        </section>
+        <section class="secondary">
+            <div class="square red_din"></div>
+            <div class="rectangle red_din"></div>
+        </section>
+    </section>
+</section>
+<section class="row">
+    <section class="bandera column">
+        <h1>Emiratos árabes</h1>
+        <section class="inline">
+            <div class="rec_vert red_emiratos"></div>
+        </section><section class="inline">
+            <div class="rectangle_emiratos green"></div>
+            <div class="rectangle_emiratos white"></div>
+            <div class="rectangle_emiratos black"></div>
+        </section>
+    </section>
+    <section  id="bandera" class="bandera column">
+            <div class="red_jap"></div>
+    </section>
+    <h1 class="title">Japón</h1> 
+</section>
+
+</body>
+</html>
